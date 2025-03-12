@@ -1,0 +1,20 @@
+/* Teste de CSS external */
+
+body{
+    padding-bottom: 5000px;
+}
+
+h3{
+    color: rgb(10, 218, 131);
+}
+
+ul{
+    border: 1px solid rgb(41, 10, 218);
+    padding: 10px;
+}
+
+li{
+    color: rgb(10, 107, 218);
+}
+
+/* Regra de segurança, cuidado com o conteúdo dos comentários pois aparece no DevTools */
