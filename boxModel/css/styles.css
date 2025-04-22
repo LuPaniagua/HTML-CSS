@@ -1,0 +1,152 @@
+/* Altura e 
+    Largura */
+
+.altura-largura {
+    background-color: rgb(160, 100, 160);
+    width: 200px;
+    height: 500px;
+}
+
+
+.nova-altura-largura {
+    height: 200px;
+    background-color: darkgray;
+}
+
+
+/* Padding */
+
+.sem-padding {
+    background-color: rgb(120, 100, 180);
+    padding: none;
+    width: 200px;
+    height: 200px;
+}
+
+
+.com-padding {
+    background-color: rgb(100, 100, 180);
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+
+
+.padding-lados {
+    background-color: cadetblue;
+    color: #fff;
+    padding-top: 40px;
+    padding-right: 5px;
+    padding-bottom: 40px;
+    padding-left: 150px;
+}
+
+.shorthand-padding {
+    background-color: indianred;
+    padding: 6px 12px 18px 24px;
+    /* padding: 6px 12px; */
+}
+
+
+/* Bordas */
+
+.borda-um {
+    border: 5px solid blueviolet;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.borda-dois {
+    border: 3px dotted gray;
+    padding: 5px;
+}
+
+/* Borda Individual por lados */
+
+.borda-esquerda{
+    border-left: 3px solid yellowgreen;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+}
+
+.borda-inferior{
+    border-bottom: 7px double #548;
+    background-color: #111;
+    color: #fff;
+    padding: 25px;
+}
+
+.borda-superior{
+    border-top: 10px dotted red;
+    background-color: aquamarine;
+    color: #808080;
+    padding: 10px;
+}
+.borda-direita{
+    border-right:2px dashed pink ;
+    background-color: cornflowerblue;
+    color: pink;
+    padding: 10px;
+}
+
+/* Borda diferente em todos os lados ao mesmo tempo */
+
+.borda-total{
+    border-left: 5px double rosybrown;
+    border-right: 5px solid yellow;
+    border-top: 5px dotted salmon;
+    border-bottom: 5px dashed orange;
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
+/* Borda Arredondada */
+.paragrafo-arredondado{
+    border: 5px solid red;
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.paragrafo-arredondado-2{
+    background-color: burlywood;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Margem */
+.margem{
+    margin: 10px;
+    background-color: darkblue;
+    color: yellow;
+}
+
+.margem-no-topo{
+    margin-top:70px ;
+    background-color: dodgerblue;
+    padding: 10px;
+}
+
+.margem-diferenciada{
+    background-color: cornflowerblue;
+    margin: 7px 10px 9px 30px;
+
+}
+
+/* Box Model */
+
+.box-model{
+    background-color: aqua;
+    color: black;
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px 15px 25px;
+    border: 5px solid violet;
+    border-radius: 10px;
+    margin: auto;
+    
+}

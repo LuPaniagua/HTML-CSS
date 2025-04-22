@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="sheetstyles" href="./css/styles.css">
+</head>
+<body>
+    <h2>Formulários</h2>
+    <form action="registro.php" method="GET">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+
+        <!-- Atributo Name -->
+        <div>
+            <label>Idade:</label>
+            <input type="text" name="age" />
+        </div>
+
+        <!-- Atributo Label -->
+         <div>
+            <label for="age">Idade:</label>
+            <input type="text" name="age" />
+         </div>
+
+            <label for="cidade">Selecione sua cidade:</label>
+            <select name="cidade">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Curitiba">Curitiba</option>
+                <option value="Nova Iorque">Nova Iorque</option>
+            </select>
+         </div>
+         <div>
+            <!-- Selected -->
+             <label for="selecao">Quem vai ganhar a próxima copa do Mundo</label>
+             <select name="times">
+                <option value="Argentina">Argentina</option>
+                <option value="Franca">França</option>
+                <option value="Alemanha">Alemanhã</option>
+                <option value="Brasil" selected>Brasil</option>
+             </select>
+         </div>
+
+         <!-- Seleção de vários Select - Multiple -->
+          <div>
+            <label for="acessorios">Selecione os acessórios do seu computador</label>
+            <select name="acessorios" multiple>
+                <option value="Mouse">Mouse</option>
+                <option value="Teclado">Teclado</option>
+                <option value="Mousepad">Mousepad</option>
+                <option value="Fone de Ouvido">Fone de Ouvido</option>
+            </select>
+          </div>
+
+          <!-- TextArea -->
+          <div>
+            <label for="feedback">Descreva o seu feedback sobre o nosso site</label>
+            <textarea name="feedback"></textarea>
+          </div>
+
+          <!-- Fildset e Legend -->
+           <div>
+            <fieldset>
+                <legend>Insira o seu endereço: </legend>
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" />
+                <label for="bairro">Bairro:</label>
+                <input type="text" name="bairro" />
+            </fieldset>
+           </div>
+
+           <!-- Datalist -->
+            <div>
+                <label for="livro">Selecione seu livro:</label>
+                <input type="text" list="livros" name="livro">
+            </div>
+
+            <datalist id="livros">
+                <option value="Crepúsculo"></option>
+                <option value="Harry Potter e a Pedra Filosofal"></option>
+                <option value="Boku no Kokoro Yabai Yatsu"></option>
+                <option value="Isagi Yoichi"></option>
+            </datalist>
+
+            <!-- Password -->
+             <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" />
+             </div>
+
+             <!-- Input Radio -->
+              <div>
+                <label for="gênero">Qual o seu gênero?</label>
+                <div class="radio">
+                    <input type="radio" value="Feminino" name="genero"/>
+                    <label for="Feminino">Feminino</label>
+                    <input type="radio" value="Masculino" name="genero"/>
+                    <label for="Masculino">Masculino</label>
+                    <input type="radio" value="satoru" name="genero" />
+                    <label for="satoru">Satoru Gojo</label>
+                </div>
+              </div>
+                             <!-- Input Checkbox -->
+
+               <div>
+                <label for="linguasestrangeiras">Quais linguas você pretende estudar:</label>
+                <!-- Reaproveitando css da class radio -->
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrangeiras" value="ingles">
+                    <label for="ingles">Inglês</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrangeiras" value="espanhol">
+                    <label for="espanhol">Espanhol</label>
+                </div>
+
+                <div class="radio">
+                    <input type="checkbox" name="linguasestrangeiras" value="alemao">
+                    <label for="alemao">Alemão</label>
+                </div>
+
+               </div>
+
+               <!-- Input Data -->
+                <div>
+                    <label for="datadenascimento">Data de Nascimento</label>
+                    <input type="date" name="datadenascimento">
+                </div>
+
+                <!-- Input File -->
+                 <div>
+                    <label for="arquivo">Insira o seu currículo em PDF</label>
+                    <input type="file" name="arquivo">
+                 </div>
+
+
+                 <!-- Input Number -->
+                <div>
+                    <label for="certificados">Quantos certificados você possui?</label>
+                    <input type="number" name="certificados">
+                </div>
+
+                <!-- Input E-mail -->
+                 <div>
+                    <label for="emailinserido">Insira o seu e-mail:</label>
+                    <input type="email" name="emailinserido">
+                 </div>
+
+                 <!-- Atributo Value -->
+                  <div>
+                    <label for="confirmaraula">Você assistiu a aula de treinamento da empresa abaixo:</label>
+                    <input type="text" value="Confirmo que assisti!" name="confirmaraula">
+                  </div>
+
+                  <!-- Atributo disabled -->
+                  <div>
+                    <p>Informe seu RG: </p>
+                    <input type="text" value="Não precisa preencher" disabled>
+                  </div>
+
+                  <!-- Atributo Placeholder -->
+                   <div>
+                    <label for="pesquisa"> Como você achou o nosso site?</label>
+                    <input type="text" name="pesquisa" placeholder="No Google ou Instagram">
+                   </div>
+
+                   <!-- Atributo Required -->
+                   <div>
+                    <label for="sobrenome">Digite o seu sobrenome</label>
+                    <input type="text" name="sobrenome" placeholder="Sobrenome Completo" required>
+                   </div>
+
+             <!-- Limpando/Resetando o formulário -->
+              <input type="reset" value="Limpar" >
+
+         <!-- Submit Botão -->
+         <input type="submit" value="Enviar" />
+         <div>
+    </form>
+</body>
+</html>
